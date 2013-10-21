@@ -1,0 +1,136 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/industries.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="e2f78d2a1b3a6fecf08199d2947a6e4b",
+        oauth_signature="EIDTMR0T2Sv3dvAY9C%2BWpEBlD5k%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366216725", oauth_token="<NETPROSPEX_USER_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 17 Apr 2013 16:38:45 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '11071'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"E2736CB6-1E6A-98E8-F138-F94C70E2D3FD","responseType":"industries","request":{"startTime":"2013-04-17
+        12:38:45","requestType":"industries","url":"\/1.1\/industries.json","userId":"d5c72b79-a2ed-11e2-8c42-00259059ba92"},"transaction":{"accountId":"d5c51e5f-a2ed-11e2-8c42-00259059ba92","accountStartBalance":7493,"accountEndBalance":7493},"industries":{"preview":0,"count":13,"limit":0,"offset":0,"calcFoundRows":null,"foundRows":13,"data":{"61":{"id":"61","name":"Agriculture","parent_id":null,"sub_industries":[{"id":"62","name":"Animals
+        & Livestock","parent_id":"61"},{"id":"131","name":"Crops","parent_id":"61"}]},"63":{"id":"63","name":"Business
+        Services","parent_id":null,"sub_industries":[{"id":"64","name":"Human Resources
+        & Staffing","parent_id":"63"},{"id":"78","name":"Information & Document Management","parent_id":"63"},{"id":"89","name":"Management
+        Consulting","parent_id":"63"},{"id":"100","name":"Multimedia & Graphic Design","parent_id":"63"},{"id":"113","name":"Security
+        Products & Services","parent_id":"63"},{"id":"125","name":"Translation & Linguistic
+        Services","parent_id":"63"},{"id":"143","name":"Accounting & Accounting Services","parent_id":"63"},{"id":"146","name":"Training","parent_id":"63"},{"id":"155","name":"Advertising
+        & Marketing","parent_id":"63"},{"id":"166","name":"Auctions","parent_id":"63"},{"id":"178","name":"Law
+        Firms & Legal Services","parent_id":"63"},{"id":"179","name":"Call Centers
+        & Business Centers","parent_id":"63"},{"id":"192","name":"Commercial Printing","parent_id":"63"},{"id":"205","name":"Debt
+        Collection","parent_id":"63"},{"id":"218","name":"Facilities Mgmt & Commercial
+        Cleaning","parent_id":"63"},{"id":"244","name":"Consulting","parent_id":"63"},{"id":"245","name":"Engineering","parent_id":"63"},{"id":"246","name":"Franchises,
+        Selling, or Licensing","parent_id":"63"},{"id":"247","name":"Other","parent_id":"63"},{"id":"248","name":"Research","parent_id":"63"}]},"65":{"id":"65","name":"Manufacturing","parent_id":null,"sub_industries":[{"id":"66","name":"Toys
+        & Games","parent_id":"65"},{"id":"67","name":"Wire & Cable","parent_id":"65"},{"id":"180","name":"Aerospace
+        & Defense","parent_id":"65"},{"id":"181","name":"Automobiles","parent_id":"65"},{"id":"182","name":"Boats
+        & Submarines","parent_id":"65"},{"id":"184","name":"Aggregates, Concrete &
+        Cement","parent_id":"65"},{"id":"185","name":"Lumber & Wood Production","parent_id":"65"},{"id":"186","name":"Miscellaneous
+        Building Materials","parent_id":"65"},{"id":"187","name":"Plumbing & HVAC
+        Equipment","parent_id":"65"},{"id":"189","name":"Chemicals","parent_id":"65"},{"id":"190","name":"Gases","parent_id":"65"},{"id":"191","name":"Glass
+        & Clay","parent_id":"65"},{"id":"193","name":"Petrochemicals","parent_id":"65"},{"id":"195","name":"Computer
+        Networking Equipment","parent_id":"65"},{"id":"196","name":"Computer Storage
+        Equipment","parent_id":"65"},{"id":"197","name":"Computer Network Security","parent_id":"65"},{"id":"198","name":"Personal
+        Computers & Peripherals","parent_id":"65"},{"id":"200","name":"Consumer Appliances","parent_id":"65"},{"id":"201","name":"Cleaning
+        Products","parent_id":"65"},{"id":"202","name":"Consumer Electronics","parent_id":"65"},{"id":"203","name":"Cosmetics
+        & Personal Care Products","parent_id":"65"},{"id":"204","name":"Household
+        Goods","parent_id":"65"},{"id":"206","name":"Jewelry & Watches","parent_id":"65"},{"id":"207","name":"Pet
+        Products","parent_id":"65"},{"id":"208","name":"Photographic & Optical Equipment","parent_id":"65"},{"id":"209","name":"Sporting
+        Goods","parent_id":"65"},{"id":"210","name":"Textiles & Apparel","parent_id":"65"},{"id":"212","name":"Batteries,
+        Power Storage & Generators","parent_id":"65"},{"id":"213","name":"Electronic
+        Components","parent_id":"65"},{"id":"214","name":"Power Conversion & Protection
+        Equipment","parent_id":"65"},{"id":"215","name":"Semiconductor & Equipment","parent_id":"65"},{"id":"217","name":"Food
+        & Beverages","parent_id":"65"},{"id":"219","name":"Tobacco","parent_id":"65"},{"id":"220","name":"Wineries
+        & Breweries","parent_id":"65"},{"id":"221","name":"Furniture","parent_id":"65"},{"id":"222","name":"Industrial
+        Machinery & Equipment","parent_id":"65"},{"id":"223","name":"Plastic, Packaging
+        & Containers","parent_id":"65"},{"id":"224","name":"Pulp & Paper","parent_id":"65"},{"id":"225","name":"Telecommunication
+        Equipment","parent_id":"65"},{"id":"226","name":"Test & Measurement Equipment","parent_id":"65"},{"id":"227","name":"Tire
+        & Rubber","parent_id":"65"}]},"68":{"id":"68","name":"Media & Internet","parent_id":null,"sub_industries":[{"id":"70","name":"Radio
+        Stations","parent_id":"68"},{"id":"71","name":"Television Stations","parent_id":"68"},{"id":"72","name":"Information
+        Collection & Delivery","parent_id":"68"},{"id":"73","name":"Music & Music
+        Related Services","parent_id":"68"},{"id":"74","name":"Newspapers & News Services","parent_id":"68"},{"id":"75","name":"Publishing","parent_id":"68"},{"id":"76","name":"Search
+        Engines & Internet Portals","parent_id":"68"},{"id":"77","name":"Film\/Video
+        Production & Services","parent_id":"68"}]},"147":{"id":"147","name":"Energy,
+        Raw Materials & Utilities","parent_id":null,"sub_industries":[{"id":"80","name":"Mining","parent_id":"147"},{"id":"81","name":"Metals
+        & Minerals","parent_id":"147"},{"id":"148","name":"Electricity, Oil & Gas","parent_id":"147"},{"id":"149","name":"Waste
+        Treatment, Environmental & Recycling","parent_id":"147"},{"id":"150","name":"Water
+        & Water Treatment","parent_id":"147"},{"id":"233","name":"Aggregates, Concrete
+        & Cement","parent_id":"147"},{"id":"234","name":"Lumber & Wood Production","parent_id":"147"},{"id":"235","name":"Chemicals","parent_id":"147"},{"id":"236","name":"Gases","parent_id":"147"},{"id":"237","name":"Glass
+        & Clay","parent_id":"147"},{"id":"238","name":"Petrochemicals","parent_id":"147"},{"id":"239","name":"Pulp
+        & Paper","parent_id":"147"}]},"128":{"id":"128","name":"Construction & Real
+        Estate","parent_id":null,"sub_industries":[{"id":"83","name":"Real Estate","parent_id":"128"},{"id":"129","name":"Architecture,
+        Engineering & Design","parent_id":"128"},{"id":"130","name":"Commercial &
+        Residential Construction","parent_id":"128"},{"id":"229","name":"Aggregates,
+        Concrete & Cement","parent_id":"128"},{"id":"230","name":"Lumber & Wood Production","parent_id":"128"},{"id":"231","name":"Miscellaneous
+        Building Materials","parent_id":"128"},{"id":"232","name":"Plumbing & HVAC
+        Equipment","parent_id":"128"}]},"84":{"id":"84","name":"Retail","parent_id":null,"sub_industries":[{"id":"85","name":"Apparel
+        & Accessories","parent_id":"84"},{"id":"86","name":"Automobile Parts Stores","parent_id":"84"},{"id":"87","name":"Consumer
+        Electronics & Computers","parent_id":"84"},{"id":"88","name":"Department Stores
+        & Superstores","parent_id":"84"},{"id":"90","name":"Drug Stores & Pharmacies","parent_id":"84"},{"id":"91","name":"Gas
+        Stations, Convenience & Liquor Stores","parent_id":"84"},{"id":"92","name":"Flowers,
+        Gifts & Specialty","parent_id":"84"},{"id":"93","name":"Furniture","parent_id":"84"},{"id":"94","name":"Grocery","parent_id":"84"},{"id":"95","name":"Home
+        Improvement & Hardware","parent_id":"84"},{"id":"96","name":"Jewelry & Watches","parent_id":"84"},{"id":"97","name":"Office
+        Products","parent_id":"84"},{"id":"98","name":"Motor Vehicle Dealers","parent_id":"84"},{"id":"99","name":"Pet
+        Products","parent_id":"84"},{"id":"101","name":"Records, Videos & Books","parent_id":"84"},{"id":"102","name":"Rental
+        - Video & DVD","parent_id":"84"},{"id":"103","name":"Rental - Other","parent_id":"84"},{"id":"104","name":"Sporting
+        & Recreational Equipment","parent_id":"84"},{"id":"105","name":"Toys & Games","parent_id":"84"},{"id":"132","name":"Automotive
+        Service & Collision Repair","parent_id":"84"},{"id":"133","name":"Car & Truck
+        Rental","parent_id":"84"},{"id":"134","name":"Funeral Homes & Funeral-Related
+        Services","parent_id":"84"},{"id":"135","name":"Hair Salons","parent_id":"84"},{"id":"136","name":"Laundry
+        & Dry Cleaning Services","parent_id":"84"},{"id":"137","name":"Photography
+        Studios","parent_id":"84"},{"id":"138","name":"Travel Services & Agencies","parent_id":"84"},{"id":"139","name":"Veterinary
+        Care","parent_id":"84"},{"id":"140","name":"Weight & Health Management","parent_id":"84"},{"id":"249","name":"Child
+        Care","parent_id":"84"},{"id":"250","name":"Other","parent_id":"84"}]},"106":{"id":"106","name":"Software","parent_id":null,"sub_industries":[{"id":"107","name":"Custom
+        Software & Consulting","parent_id":"106"},{"id":"108","name":"Packaged Software","parent_id":"106"},{"id":"228","name":"Search
+        Engines & Internet Portals","parent_id":"106"}]},"109":{"id":"109","name":"Telecommunications","parent_id":null,"sub_industries":[{"id":"110","name":"Cable
+        & Satellite","parent_id":"109"},{"id":"111","name":"Internet Service Providers
+        & Related","parent_id":"109"},{"id":"112","name":"Telephony & Wireless","parent_id":"109"}]},"114":{"id":"114","name":"Transportation","parent_id":null,"sub_industries":[{"id":"115","name":"Airlines,
+        Airports & Air Services","parent_id":"114"},{"id":"116","name":"Freight &
+        Logistics Services","parent_id":"114"},{"id":"117","name":"Marine Shipping
+        & Transportation","parent_id":"114"},{"id":"118","name":"Rail, Bus & Taxi","parent_id":"114"},{"id":"119","name":"Trucking,
+        Moving & Storage","parent_id":"114"}]},"167":{"id":"167","name":"Leisure &
+        Hospitality","parent_id":null,"sub_industries":[{"id":"144","name":"Museums
+        & Art Galleries","parent_id":"167"},{"id":"168","name":"Lodging & Resorts","parent_id":"167"},{"id":"170","name":"Amusement
+        Parks & Attractions","parent_id":"167"},{"id":"171","name":"Fitness & Dance
+        Facilities","parent_id":"167"},{"id":"172","name":"Gambling & Gaming","parent_id":"167"},{"id":"173","name":"Theaters","parent_id":"167"},{"id":"174","name":"Zoos
+        & National Parks","parent_id":"167"},{"id":"175","name":"Restaurants","parent_id":"167"},{"id":"176","name":"Sports
+        Teams & Leagues","parent_id":"167"}]},"151":{"id":"151","name":"Finance","parent_id":null,"sub_industries":[{"id":"152","name":"Banking","parent_id":"151"},{"id":"153","name":"Brokerage","parent_id":"151"},{"id":"154","name":"Credit
+        Cards & Transaction Processing","parent_id":"151"},{"id":"156","name":"Investment
+        Banking","parent_id":"151"},{"id":"157","name":"Venture Capital & Private
+        Equity","parent_id":"151"},{"id":"158","name":"Mutual Funds & Investment Managers","parent_id":"151"},{"id":"177","name":"Insurance","parent_id":"151"}]},"159":{"id":"159","name":"Healthcare","parent_id":null,"sub_industries":[{"id":"160","name":"Emergency
+        Medical Transportation & Svcs","parent_id":"159"},{"id":"161","name":"Hospitals
+        & Clinics","parent_id":"159"},{"id":"162","name":"Medical Testing & Clinical
+        Laboratories","parent_id":"159"},{"id":"163","name":"Medical Devices & Equipment","parent_id":"159"},{"id":"164","name":"Biotechnology","parent_id":"159"},{"id":"165","name":"Pharmaceuticals","parent_id":"159"},{"id":"243","name":"Public
+        Health","parent_id":"159"}]}}},"debug":{"requestTime":0.0183761119843}}}'
+    http_version: 
+  recorded_at: Wed, 17 Apr 2013 16:38:45 GMT
+recorded_with: VCR 2.4.0

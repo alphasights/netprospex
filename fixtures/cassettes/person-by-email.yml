@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/person/profile.json?email=grublev@netprospex.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="269d15c42d99f6980fed36d3d46c678e",
+        oauth_signature="binTu1sGcaQGs9W7RB%2BTe1qBc6c%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366394295", oauth_token="<NETPROSPEX_USER_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Apr 2013 17:58:15 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '1892'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"E47E759B-6C23-F6FE-6A74-04FF33ADAD99","responseType":"person_profile","request":{"startTime":"2013-04-19
+        13:58:15","requestType":"person_profile","url":"\/1.1\/person\/profile.json?email=grublev%40netprospex.com","userId":"d5c72b79-a2ed-11e2-8c42-00259059ba92"},"transaction":{"accountId":"d5c51e5f-a2ed-11e2-8c42-00259059ba92","accountStartBalance":7019,"accountEndBalance":7018},"person_profile":{"preview":0,"count":1,"person":{"personId":29435533,"accuracyRating":{"phoneAccuracy":72},"prefix":"","firstName":"Greg","lastName":"Rublev","suffix":"","title":"Director
+        of Product Management","hierarchytitle":["DIR"],"functions":["Product\/Market
+        Management","Director"],"email":"grublev@netprospex.com","phones":[{"label":"directPhone","countryCallingCode":1,"nationalNumber":"7819060128","formattedNumber":"1
+        (781) 906-0128","extra":""},{"label":"mainOfficePhone","countryCallingCode":1,"nationalNumber":"8888264877","formattedNumber":"1
+        (888) 826-4877","extra":""}],"postalAddress":{"formattedAddress":"300 Third
+        Avenue Waltham, MA 02451","address":"300 Third Avenue","address2":null,"city":"Waltham","state":"MA","postalCode":"02451","country":"United
+        States"},"organization":{"organizationId":1824348,"organizationName":"NetProspex","postalAddress":{"formattedAddress":"300
+        Third Avenue Waltham, MA 02453-7756","address":"300 Third Avenue","address2":"","city":"Waltham","state":"MA","postalCode":"02453-7756","country":"United
+        States"},"phones":[{"label":"organizationPhone","countryCallingCode":1,"nationalNumber":"8888264877","formattedNumber":"1
+        (888) 826-4877","extra":""}],"domains":{"domain":{"url":"http:\/\/www.netprospex.com"}},"industries":{"89":"Management
+        Consulting","244":"Consulting","247":"Other","250":"Other"},"revenueRange":"Less
+        than $1 mil","employeeCountRange":"Less than 25"}}},"debug":{"requestTime":0.0900309085846}}}'
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 17:58:15 GMT
+recorded_with: VCR 2.4.0

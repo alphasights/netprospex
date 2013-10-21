@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/person/list.json?limit=1&organizationName=Pardot&preview=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="9424c1f0efdecffbe7ff6c9c8f7f876e",
+        oauth_signature="Y614LBzJ6Y5E87YJ%2B99yxy%2FvLH4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366401877", oauth_token="<NETPROSPEX_USER_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Apr 2013 20:04:38 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '1443'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"62B1728D-E780-6669-6F3C-3A0329F2BD4A","responseType":"person_list","request":{"startTime":"2013-04-19
+        16:04:38","requestType":"person_list","url":"\/1.1\/person\/list.json?organizationName=Pardot&preview=1&limit=1","userId":"d5c72b79-a2ed-11e2-8c42-00259059ba92"},"transaction":{"accountId":"d5c51e5f-a2ed-11e2-8c42-00259059ba92","accountStartBalance":7017,"accountEndBalance":7017},"person_list":{"preview":1,"count":1,"limit":1,"offset":0,"calcFoundRows":1,"foundRows":60,"persons":[{"personId":85652828,"accuracyRating":{"phoneAccuracy":65},"prefix":"","firstName":"Reena","lastName":"Parekh","suffix":"","title":"Marketing
+        Program Senior Coordinator","hierarchytitle":["MGR"],"functions":["Manager","General
+        Marketing"],"email":"","phones":[],"postalAddress":{"formattedAddress":"950
+        E Paces Ferry Rdsuite 2440 Fl 24 Atlanta, GA 30326","address":"950 E Paces
+        Ferry Rdsuite 2440 Fl 24","address2":null,"city":"Atlanta","state":"GA","postalCode":"30326","country":"United
+        States"},"organization":{"organizationId":2098405,"organizationName":"Pardot","postalAddress":{"formattedAddress":"","address":"","address2":"","city":"","state":"","postalCode":"","country":"United
+        States"},"domains":{"domain":{"url":"http:\/\/www.pardot.com"}},"industries":{"108":"Packaged
+        Software"},"revenueRange":"Less than $1 mil","employeeCountRange":"25 to less
+        than 100"}}]},"debug":{"requestTime":0.0959680080414}}}'
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 20:04:38 GMT
+recorded_with: VCR 2.4.0

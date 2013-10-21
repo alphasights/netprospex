@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/prospect/profile.json?organizationName=Pardot
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="ba78f617aac083a3e6db2b250c87edea",
+        oauth_signature="WH32Pen5ZuFTYpjkS6b%2BrN%2B7s6s%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366301187", oauth_token="<NETPROSPEX_USER_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Apr 2013 16:06:28 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '577'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"AC60EAD4-5985-272B-BFD6-1264D7F925CD","responseType":"error","request":{"startTime":"2013-04-18
+        12:06:28","requestType":"prospect_profile","url":"\/1.1\/prospect\/profile.json?organizationName=Pardot","userId":"d5c72b79-a2ed-11e2-8c42-00259059ba92"},"transaction":{"accountId":"d5c51e5f-a2ed-11e2-8c42-00259059ba92","accountStartBalance":7120,"accountEndBalance":7120},"error":{"message":"invalid
+        access for userId=d5c72b79-a2ed-11e2-8c42-00259059ba92 and call=prospect_profile","code":"ACL"},"debug":{"requestTime":0.0191609859467}}}'
+    http_version: 
+  recorded_at: Thu, 18 Apr 2013 16:06:28 GMT
+recorded_with: VCR 2.4.0

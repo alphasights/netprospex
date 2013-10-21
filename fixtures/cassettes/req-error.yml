@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/person/list.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="2e2556d88815db3044d263110492c76d",
+        oauth_signature="MX5V81z3L50m1oIYkNYYn%2BgLT18%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366302031", oauth_token="<NETPROSPEX_USER_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Apr 2013 16:20:32 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '484'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"CB93209F-A577-A249-8714-7849B42E325F","responseType":"error","request":{"startTime":"2013-04-18
+        12:20:32","requestType":"person_list","url":"\/1.1\/person\/list.json","userId":"d5c72b79-a2ed-11e2-8c42-00259059ba92"},"transaction":{"accountId":"d5c51e5f-a2ed-11e2-8c42-00259059ba92","accountStartBalance":7120,"accountEndBalance":null},"error":{"message":"no
+        valid arguments were found","code":"REQ"},"debug":{"requestTime":0.0180189609528}}}'
+    http_version: 
+  recorded_at: Thu, 18 Apr 2013 16:20:32 GMT
+recorded_with: VCR 2.4.0

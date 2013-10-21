@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/person/profile.json?personId=85652828
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="daa6633b34ee1e45c990415f978ea5e4",
+        oauth_signature="UJYmVaTpeNj32cdkwXe7ZN7Luxc%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366401130", oauth_token="<NETPROSPEX_USER_TOKEN>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 19 Apr 2013 19:52:11 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '1772'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"DDBF94A4-F422-44D9-53F7-E1F2ACE56FA1","responseType":"person_profile","request":{"startTime":"2013-04-19
+        15:52:11","requestType":"person_profile","url":"\/1.1\/person\/profile.json?personId=85652828","userId":"d5c72b79-a2ed-11e2-8c42-00259059ba92"},"transaction":{"accountId":"d5c51e5f-a2ed-11e2-8c42-00259059ba92","accountStartBalance":7018,"accountEndBalance":7017},"person_profile":{"preview":0,"count":1,"person":{"personId":85652828,"accuracyRating":{"phoneAccuracy":65},"prefix":"","firstName":"Reena","lastName":"Parekh","suffix":"","title":"Marketing
+        Program Senior Coordinator","hierarchytitle":["MGR"],"functions":["Manager","General
+        Marketing"],"email":"reena.shukla@pardot.com","phones":[{"label":"directPhone","countryCallingCode":1,"nationalNumber":"2899830965","formattedNumber":"1
+        (289) 983-0965","extra":""},{"label":"mainOfficePhone","countryCallingCode":1,"nationalNumber":"4044926845","formattedNumber":"1
+        (404) 492-6845","extra":""}],"postalAddress":{"formattedAddress":"950 E Paces
+        Ferry Rdsuite 2440 Fl 24 Atlanta, GA 30326","address":"950 E Paces Ferry Rdsuite
+        2440 Fl 24","address2":null,"city":"Atlanta","state":"GA","postalCode":"30326","country":"United
+        States"},"organization":{"organizationId":2098405,"organizationName":"Pardot","postalAddress":{"formattedAddress":"","address":"","address2":"","city":"","state":"","postalCode":"","country":"United
+        States"},"phones":[{"label":"organizationPhone","countryCallingCode":null,"nationalNumber":"","formattedNumber":"
+        () -","extra":""}],"domains":{"domain":{"url":"http:\/\/www.pardot.com"}},"industries":{"108":"Packaged
+        Software"},"revenueRange":"Less than $1 mil","employeeCountRange":"25 to less
+        than 100"}}},"debug":{"requestTime":0.10311794281}}}'
+    http_version: 
+  recorded_at: Fri, 19 Apr 2013 19:52:11 GMT
+recorded_with: VCR 2.4.0

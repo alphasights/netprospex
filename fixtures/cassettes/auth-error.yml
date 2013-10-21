@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api-sb.netprospex.com/1.1/industries.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Authorization:
+      - OAuth oauth_consumer_key="<NETPROSPEX_KEY>", oauth_nonce="bd8ee1cf960dd03755bac6ccb675b943",
+        oauth_signature="VlPqW3NoDFfyrp7xwJTLeQ5zXcs%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1366301817", oauth_token="bad", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 18 Apr 2013 16:16:58 GMT
+      Server:
+      - Apache/2.2.22 (Unix) mod_ssl/2.2.22 OpenSSL/1.0.0-fips DAV/2 mod_wsgi/3.3
+        Python/2.7.2 PHP/5.3.10
+      X-Powered-By:
+      - PHP/5.3.10
+      Connection:
+      - close
+      Content-Length:
+      - '411'
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"version":"1.1","responseId":"CADF5480-F4D4-8684-9A63-104D7F7EA2E2","responseType":"error","request":{"startTime":"2013-04-18
+        12:16:58","requestType":"industries","url":"\/1.1\/industries.json","userId":null},"transaction":{"accountId":null,"accountStartBalance":null,"accountEndBalance":null},"error":{"message":"Invalid
+        access token: bad","code":"AUTH"},"debug":{"requestTime":0.00708293914795}}}'
+    http_version: 
+  recorded_at: Thu, 18 Apr 2013 16:16:58 GMT
+recorded_with: VCR 2.4.0
