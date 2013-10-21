@@ -1,6 +1,6 @@
 module NetProspex
   module Configuration
-    attr_accessor :consumer_key, :consumer_secret
+    attr_accessor :consumer_key, :consumer_secret, :scheme
     attr_reader :environment, :version
 
     def environment=(env)
@@ -14,6 +14,10 @@ module NetProspex
 
     def version=(v)
       @version = v
+    end
+
+    def scheme
+      @scheme || 'http'
     end
 
     def self.extended(base)

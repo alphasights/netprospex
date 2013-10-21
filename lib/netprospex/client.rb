@@ -26,9 +26,9 @@ module NetProspex
     def api_base
       @api_base ||= case NetProspex.environment
       when :production
-        "http://api.netprospex.com/#{NetProspex.version}"
+        "#{NetProspex.scheme}://api.netprospex.com/#{NetProspex.version}"
       when :sandbox
-        "http://api-sb.netprospex.com/#{NetProspex.version}"
+        "#{NetProspex.scheme}://api-sb.netprospex.com/#{NetProspex.version}"
       end
     end
 
