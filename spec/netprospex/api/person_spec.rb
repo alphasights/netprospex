@@ -7,7 +7,6 @@ describe NetProspex::Api::Person do
     NetProspex.configure do |c|
       c.consumer_key = ENV['NETPROSPEX_KEY']
       c.consumer_secret = ENV['NETPROSPEX_SECRET']
-      c.environment = :sandbox
     end
   end
 

@@ -7,7 +7,6 @@ describe NetProspex::Client do
     NetProspex.configure do |c|
       c.consumer_key = ENV['NETPROSPEX_KEY']
       c.consumer_secret = ENV['NETPROSPEX_SECRET']
-      c.environment = :sandbox
     end
   end
   after(:each) { NetProspex.reset }
@@ -16,7 +15,7 @@ describe NetProspex::Client do
 
   it "builds the version into the api url" do
     NetProspex.configure { |c| c.version = "9.9" }
-    stub = stub_request(:get, %r(api-sb\.netprospex\.com/9\.9/.*)).to_return(body: '{"response":{}}', headers: {'Content-Type' => 'application/json'})
+    stub = stub_request(:get, %r(api\.netprospex\.com/9\.9/.*)).to_return(body: '{"response":{}}', headers: {'Content-Type' => 'application/json'})
     client.get("/industries.json")
     stub.should have_been_requested
   end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api-sb.netprospex.com/1.1/industries.json
+    uri: http://api.netprospex.com/1.1/industries.json
     body:
       encoding: US-ASCII
       string: ''
@@ -131,6 +131,6 @@ http_interactions:
         & Clinics","parent_id":"159"},{"id":"162","name":"Medical Testing & Clinical
         Laboratories","parent_id":"159"},{"id":"163","name":"Medical Devices & Equipment","parent_id":"159"},{"id":"164","name":"Biotechnology","parent_id":"159"},{"id":"165","name":"Pharmaceuticals","parent_id":"159"},{"id":"243","name":"Public
         Health","parent_id":"159"}]}}},"debug":{"requestTime":0.0183761119843}}}'
-    http_version: 
+    http_version:
   recorded_at: Wed, 17 Apr 2013 16:38:45 GMT
 recorded_with: VCR 2.4.0

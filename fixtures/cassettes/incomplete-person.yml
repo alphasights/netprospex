@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api-sb.netprospex.com/1.1/person/list.json?limit=1&organizationName=Pardot&preview=1
+    uri: http://api.netprospex.com/1.1/person/list.json?limit=1&organizationName=Pardot&preview=1
     body:
       encoding: US-ASCII
       string: ''
@@ -47,6 +47,6 @@ http_interactions:
         States"},"domains":{"domain":{"url":"http:\/\/www.pardot.com"}},"industries":{"108":"Packaged
         Software"},"revenueRange":"Less than $1 mil","employeeCountRange":"25 to less
         than 100"}}]},"debug":{"requestTime":0.0959680080414}}}'
-    http_version: 
+    http_version:
   recorded_at: Fri, 19 Apr 2013 20:04:38 GMT
 recorded_with: VCR 2.4.0

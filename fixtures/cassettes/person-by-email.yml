@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://api-sb.netprospex.com/1.1/person/profile.json?email=grublev@netprospex.com
+    uri: http://api.netprospex.com/1.1/person/profile.json?email=grublev@netprospex.com
     body:
       encoding: US-ASCII
       string: ''
@@ -50,6 +50,6 @@ http_interactions:
         (888) 826-4877","extra":""}],"domains":{"domain":{"url":"http:\/\/www.netprospex.com"}},"industries":{"89":"Management
         Consulting","244":"Consulting","247":"Other","250":"Other"},"revenueRange":"Less
         than $1 mil","employeeCountRange":"Less than 25"}}},"debug":{"requestTime":0.0900309085846}}}'
-    http_version: 
+    http_version:
   recorded_at: Fri, 19 Apr 2013 17:58:15 GMT
 recorded_with: VCR 2.4.0

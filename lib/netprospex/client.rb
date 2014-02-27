@@ -24,12 +24,7 @@ module NetProspex
     protected
 
     def api_base
-      @api_base ||= case NetProspex.environment
-      when :production
-        "#{NetProspex.scheme}://api.netprospex.com/#{NetProspex.version}"
-      when :sandbox
-        "#{NetProspex.scheme}://api-sb.netprospex.com/#{NetProspex.version}"
-      end
+      @api_base = "#{NetProspex.scheme}://api.netprospex.com/#{NetProspex.version}"
     end
 
     def api_url(path, query={})

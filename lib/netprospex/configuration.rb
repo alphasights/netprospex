@@ -1,16 +1,7 @@
 module NetProspex
   module Configuration
     attr_accessor :consumer_key, :consumer_secret, :scheme
-    attr_reader :environment, :version
-
-    def environment=(env)
-      env = env.to_sym
-      if [:production, :sandbox].include?(env)
-        @environment = env
-      else
-        raise NetProspex::ConfigurationError.new("Unknown environment #{env}")
-      end
-    end
+    attr_reader :version
 
     def version=(v)
       @version = v
@@ -27,7 +18,6 @@ module NetProspex
     def reset
       self.consumer_key = nil
       self.consumer_secret = nil
-      self.environment = :production
       self.version = "1.1"
     end
 
