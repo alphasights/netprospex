@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'netprospex/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = 'netprospex'
+  gem.name          = 'netprospex-ruby'
   gem.version       = NetProspex::VERSION
   gem.authors       = ['Michael Limiero']
   gem.email         = ['mike5713@gmail.com']
