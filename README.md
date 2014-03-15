@@ -1,5 +1,7 @@
 # Netprospex
 
+[![](https://api.tddium.com:443/matteodepalo/netprospex/badges/65089.png?badge_token=82a33421b89213ab6426816a077ad942d52a8db6)](https://api.tddium.com:443/matteodepalo/netprospex/suites/65089)
+
 TODO: Write a gem description
 
 ## Installation
