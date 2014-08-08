@@ -1,9 +1,11 @@
 module NetProspex
   module QueryMethods
+    class UnexpectedResponseError < StandardError; end
+
     def find_person(query)
       response = get('/person/profile.json', query)
       store_balance(response)
-      if p = response.fetch(:response,{}).fetch(:person_profile,{})[:person]
+      if p = fetch_key_from_response_hash(:person_profile, response)[:person]
         return NetProspex::Api::Person.new(p)
       else
         return nil
@@ -25,7 +27,7 @@ module NetProspex
       end
       response = get('/person/list.json', query)
       store_balance(response)
-      if persons = response.fetch(:response,{}).fetch(:person_list,{})[:persons]
+      if persons = fetch_key_from_response_hash(:person_list, response)[:persons]
         return persons.map{|p| NetProspex::Api::Person.new(p)}
       else
         return [] #TODO should this raise an error?
@@ -33,9 +35,19 @@ module NetProspex
     end
 
     protected
+
     def store_balance(hash)
-      balance = hash.fetch(:response,{}).fetch(:transaction,{})[:account_end_balance]
+      balance = fetch_key_from_response_hash(:transaction, hash)[:account_end_balance]
       @account_balance = balance if balance
     end
+
+    private
+
+    def fetch_key_from_response_hash(key, response_hash)
+      response = response_hash.fetch(:response, {})
+      raise UnexpectedResponseError, "Unexpected response: #{response}" unless response.respond_to?(:fetch)
+      response.fetch(key, {})
+    end
+
   end
 end
