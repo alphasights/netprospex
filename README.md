@@ -1,14 +1,14 @@
 # Netprospex
 
-[![](https://api.tddium.com:443/matteodepalo/netprospex/badges/65089.png?badge_token=82a33421b89213ab6426816a077ad942d52a8db6)](https://api.tddium.com:443/matteodepalo/netprospex/suites/65089)
+The NetProspex API provides search and lookup for detailed information on people and companies. This is a ruby wrapper that makes it easier to use the API.
 
-TODO: Write a gem description
+Note that this is a fork the original `netprospex` gem.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'netprospex'
+    gem 'netprospex-ruby', require: 'netprospex'
 
 And then execute:
 
@@ -16,11 +16,8 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install netprospex
+    $ gem install netprospex-ruby
 
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 

@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = NetProspex::VERSION
   gem.authors       = ['Michael Limiero']
   gem.email         = ['mike5713@gmail.com']
-  gem.homepage      = 'https://github.com/SalesLoft/netprospex-ruby'
+  gem.homepage      = 'https://github.com/alphasights/netprospex'
   gem.summary       = %q{Ruby bindings for NetProspex API}
   gem.description   = %q{The NetProspex API provides search and lookup for detailed information on people and companies.}
   gem.license       = 'MIT'
